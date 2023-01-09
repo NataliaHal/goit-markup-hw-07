@@ -28,20 +28,22 @@
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding: 40px;
+
+    &__title {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 23px;
+    
+            letter-spacing: 0.03em;
+            color: var(--primary-text-color);
+            display: flex;
+            justify-content: center;
+            margin-top: 0;
+            margin-bottom: 12px;
+        }
 }
 
-.modal__title {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 23px;
 
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color);
-    display: flex;
-    justify-content: center;
-    margin-top: 0;
-    margin-bottom: 12px;
-}
 
 textarea {
     resize: none;
@@ -49,19 +51,20 @@ textarea {
 
 .form {
     width: 448px;
+
+    &__label {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.01em;
+            color: var(--title-text-color);
+        }
+    
+        &__field {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            position: relative;
+        }
 }
 
-.form__label {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
-    color: var(--title-text-color);
-}
-
-.form__field {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
-    position: relative;
-}

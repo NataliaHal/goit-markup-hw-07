@@ -1,3 +1,20 @@
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin-left: 93px;
+
+    &__email {
+            width: 358px;
+            height: 50px;
+            padding-left: 16px;
+        }
+
+                &__input {
+                    display: flex;
+                    gap: 12px;
+                }
+}
+
 .form__input:focus+.icon .icon__input {
     fill: rgba(33, 150, 243, 1);
 }
@@ -51,17 +68,6 @@
     color: rgba(117, 117, 117, 0.5);
 }
 
-.form-field {
-    display: flex;
-    flex-direction: column;
-    margin-left: 93px;
-}
-
-.form-field__email {
-    width: 358px;
-    height: 50px;
-    padding-left: 16px;
-}
 
 .form-field input {
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -82,7 +88,3 @@
     color: rgba(255, 255, 255, 0.6);
 }
 
-.form-field__input {
-    display: flex;
-    gap: 12px;
-}

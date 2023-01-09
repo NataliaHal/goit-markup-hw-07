@@ -12,3 +12,15 @@
     --border-color-header: #ececec;
     --color-social: #afb1b8;
 }
+
+.subscription {
+    font-style: normal;
+    font-weight: 700;
+
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+    color: var(--primary-white-color);
+}

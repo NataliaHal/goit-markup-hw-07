@@ -18,17 +18,11 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: fill;
-}
 
-.close:hover,
-.close:focus {
-    fill: rgba(33, 150, 243, 1);
-}
-
-.icon__input {
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: fill;
+    &:hover,
+        &:focus {
+            fill: rgba(33, 150, 243, 1);
+        }
 }
 
 .icon {
@@ -37,6 +31,12 @@
     left: 15px;
     display: inline-block;
     cursor: pointer;
+
+    &__input {
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-property: fill;
+        }
 }
 
 .icon-checkbox-hover {
@@ -80,4 +80,18 @@
     width: 16px;
     height: 15px;
     color: rgba(33, 33, 33, 1);
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-link-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 32px 0;
 }

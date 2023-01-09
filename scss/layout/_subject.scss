@@ -30,16 +30,16 @@
         margin-top: 0;
         margin-bottom: 0;
     }
+        &__list {
+            box-sizing: border-box;
+            height: 120px;
+            width: 270px;
+            background-color: var(--back-photos-color);
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
 }
 
-.subject__list {
-    box-sizing: border-box;
-    height: 120px;
-    width: 270px;
-    background-color: var(--back-photos-color);
-    border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
-}
