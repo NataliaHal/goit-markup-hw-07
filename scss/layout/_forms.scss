@@ -15,11 +15,19 @@
                 }
 }
 
-.form__input:focus+.icon .icon__input {
+.form__input{
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        background-color: rgba(47, 48, 58, 1);
+
+}
+
+.form__input:focus {
     fill: rgba(33, 150, 243, 1);
 }
 
-.form__field input {
+.form__field {
     width: 448px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -32,17 +40,17 @@
     outline: none;
 }
 
-.form__field input:focus {
+.form__field:focus {
     border: 1px solid rgba(33, 150, 243, 1);
 }
 
-.form__field label {
+.form__label {
     margin-top: 0;
-    margin-left: 0;
-    margin-bottom: 4px;
+        margin-left: 0;
+        margin-bottom: 4px;
 }
 
-.form__field textarea {
+.form__textarea {
     width: 448px;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -53,30 +61,19 @@
     transition-property: border;
     outline: none;
     cursor: pointer;
+        font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.01em;
+        
+            color: rgba(117, 117, 117, 0.5);
 }
 
-.form__field textarea:focus {
+.form__textarea:focus {
     border: 1px solid rgba(33, 150, 243, 1);
 }
 
-.for-textarea textarea::placeholder {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
-
-    color: rgba(117, 117, 117, 0.5);
-}
-
-
-.form-field input {
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    background-color: rgba(47, 48, 58, 1);
-}
-
-.form-field__email input::placeholder {
+.form-field__email {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;

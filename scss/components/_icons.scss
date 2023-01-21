@@ -31,12 +31,17 @@
     left: 15px;
     display: inline-block;
     cursor: pointer;
+   
 
     &__input {
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             transition-property: fill;
         }
+}
+
+.icon:focus {
+ fill: rgba(33, 150, 243, 1);
 }
 
 .icon-checkbox-hover {
@@ -49,14 +54,12 @@
     border: 2px solid var(--primary-text-color);
     border-radius: 3px;
     margin-right: 7px;
+   
 }
 
-.checkbox:checked+.icon-checkbox .icon-checkbox-hover {
-    opacity: 1;
-}
-
-.checkbox:checked+.icon-checkbox {
+.checkbox {
     border: none;
+    opacity: 1;
 }
 
 .for-consent {
@@ -76,7 +79,7 @@
     text-decoration: underline;
 }
 
-.consent input[type="checkbox"] {
+.form__input {
     width: 16px;
     height: 15px;
     color: rgba(33, 33, 33, 1);
